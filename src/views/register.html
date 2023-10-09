@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <nav class="content-nav">
+        <div class="box-register">
+            <form action="/register" method="get" ></form>
+            <label for="txfname" ></label>
+            <input type="text" name="nombreApellido" id="txfname" placeholder="Nombre y apellido">
+        </div>
+        
+        <div class="content-register">
+            <label for="txfuser"></label>
+            <input type="text" name="NombreUsuario" id="txfuser" placeholder="Nombre de usuario">
+        </div>
+        
+        <div class="content-register">
+            <label for="txfemail"></label>
+            <input type="email" name="E-mail" id="txfemail" placeholder="E-mail">
+        </div>
+    </div>
+    
+    <h1>Fecha de nacimiento</h1>
+    
+    <div class="content-register">
+        <div class="label">
+            <input type="date" name="fechaNacimiento">
+        </div>
+    </div>
+        
+        <div class="content-register">
+            <label for="txfadress"></label>
+            <input type="email" name="adress" id="txfadress" placeholder="Domicilio">
+        </div>
+        
+        <h1>Perfil de usuario</h1>
+        
+        <label>
+            <input type="radio" name="user" for="rbd user">Comprador
+        </label>
+        
+        <label>
+            <input type="radio" name="user" for="rbd user">Vendedor
+        </label>
+        
+        <h1>Intereses</h1>
+        
+        <form>
+            <div class="content-register">
+                <label>
+                    <input type="checkbox" name="Intereses" for="chkinterst" value="electro">Electro
+                </label>
+            </div>
+            
+            <div class="content-register">
+                <label>
+                    <input type="checkbox" name="Intereses" for="chkinterst" value="fashion">Moda
+                </label>
+            </div>
+            
+            <div class="content-register">
+                <label>
+                    <input type="checkbox" name="Intereses" for="chkinterst" value="home">Hogar
+                </label>
+            </div>
+            
+            <div class="content-register">
+                <label>
+                    <input type="checkbox" name="Intereses" for="chkinterst" value="play">Juguetería
+                </label>
+            </div>
+            
+            <div class="content-register">
+                <label>
+                    <input type="checkbox" name="Intereses" for="chkinterst" value="helt">Vida sana
+                </label>
+            </div>
+
+            <div class="content-register">
+                <label>
+                    <input type="file" name="images" id="img">
+                </label>
+            </div>
+
+            <div class="content-register">
+                <label for="txfpassword"></label>
+                <input type="password" name="password" id="txfpassword" placeholder="Contraseña">
+            </div>
+            
+            <div class="content-register">
+                <div class="buttom-send">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </nav>
+</body>
+</html>

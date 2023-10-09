@@ -1,0 +1,261 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto";
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+header {
+    position: sticky;   
+    top: 0; 
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    width: 50%;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logo-container img {
+    width: 160px
+}
+
+.search{
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.search .button{
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.search input{
+    border: none; 
+    padding:10px;
+    border-radius: 6px;
+}
+
+.paragraph-container{
+    padding: 20px;
+}
+
+.burger-container{
+    color: white;
+    text-align: center;
+    background-color:#1259c3;
+    border-radius: 5px;
+    margin: 10px 0px 3px 0px;
+    padding: 7px;
+    font-size: 20px;
+    width: 40px;
+}
+
+.nav{
+    display: none;
+}
+
+.banner, .banner img{
+    width: 100%;
+}
+
+.product-img{
+    width: 100%;
+}
+
+article{
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.last-visit{
+    color: #666;
+    padding: 10px;
+}
+
+.price-container{
+    display: flex;
+}
+
+.price{
+    font-size: 18px;
+    width: 40%;
+}
+
+.discount{
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+    width: 70%;
+}
+
+.description{
+    font-size: 16px;
+    color:#666;
+    margin-top: 15px;
+}
+
+.fas.fa-truck{
+    color:#39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.last-visit{
+    font-size: 24px;
+}
+
+.main-article {
+    position: relative;
+    padding: 20px;
+    border-top: 1px solid #ebebeb;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.footer-text{
+    text-align: center;
+    color:#666;
+    font-size: 12px;
+    line-height:20px;
+    margin-top: 30px;
+}
+
+.images-bottom{
+    color:#1259c3;
+    size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.products article{
+    margin-bottom: 10px;
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) { 
+    header{
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-list{
+        text-decoration: none;
+        list-style: none;
+        margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        gap:15px;
+    }
+    .logo-container{
+        justify-content: space-between;
+        flex-wrap:nowrap;
+        margin-bottom: 30px;
+    }
+
+    .logo, .search{
+        width: unset;
+    }
+
+    .nav-list a{ 
+        text-decoration: none;
+        color:black;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .burger-container{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1280px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .description{
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+    article:hover .description {
+        visibility: visible;
+        opacity: 1;
+    }
+    article:hover { 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .fas.fa-truck{
+        transition: transform 300ms;
+    }
+    .fas.fa-truck:hover{
+        transform: rotate(-90deg);
+    }
+    .footer-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .images-bottom{
+        font-size: 20px;
+        transition-property: color;
+        transition-duration: 300ms ;
+    }
+    .images-bottom:hover{
+        color:#EAC926;
+    }
+    .login{
+        transition-property: color;
+        transition-duration: 300ms ;
+    }
+    .login:hover{
+        color:#0022AA
+    }
+} 

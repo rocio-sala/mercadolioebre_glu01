@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 40%;
+    font-family: "Roboto";
+    font-size: 12px;
+    border-color: none;
+    display: flex;
+    background-color: #ebebeb;
+    margin: 30%;
+    align-items: center;
+}
+.content-register{
+    font-size: 12px;
+    color: #666;
+    margin-top:15px; 
+    height: 100%;
+    width: fit-content;
+}
